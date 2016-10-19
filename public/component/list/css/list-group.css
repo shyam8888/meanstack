@@ -1,0 +1,22 @@
+/*DMaterial*/
+.list-group-item { padding-top:16px; padding-bottom:18px; margin-bottom: -1px; border: inherit;}
+.list-group-item-heading {margin-top: 0; margin-bottom: 0; display:block;}
+.list-group-item-text {margin-bottom: 0; line-height:1.6; color:rgba(0,0,0,0.54)}
+.list-group-item:first-child { border-top-left-radius: 0; border-top-right-radius: 0;}
+.list-group-item:last-child { margin-bottom: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;}
+
+/*icon list*/
+.dc-iconlist .list-group-item{ padding-top:12px; padding-bottom:12px;}
+.dic.media-left{padding-right:32px;}
+.dic.media-right{padding-left:32px;}
+
+/*icon textlist twoline*/
+.dc-twoline-list .list-group-item{ padding-bottom:16px;}
+
+/*icon iconlist twoline*/
+.dc-iconlist .list-group-item{line-height:1.7;}
+
+/*icon list*/
+.sline-avatar{ padding:8px 0;}
+.avatar-list-img{ border-radius:50%; width:40px; height:40px; overflow:hidden; display:inline-block;}
+.sline-avatar .list-group-item{padding-top:8px; padding-bottom:8px;}

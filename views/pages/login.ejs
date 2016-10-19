@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/head %>
+    <link rel="stylesheet" type="text/css" href="theme/css/login.css">    
+
+</head>
+
+<body class="container">
+
+  <div class="logincard">
+
+    <div class="card card-default z-depth">
+
+      <div class="login-card">
+        <form method="post" id="frmLogin">
+          <div class="card-header card-header-border text-center">
+            <div class="loginlogo">
+              <a href="#">
+                <img src="http://easypay.co.in/images/rsz_logohome.png">
+              </a>
+            </div>
+            <h3>Sign In
+              <span>with 
+                <strong>Easy Pay</strong>
+              </span>
+            </h3>
+          </div>
+          <div class="card-body">
+            <!--<div class="alert alert-success" role="alert"> Oh snap! Change a few things up and try submitting again. </div>-->
+
+            <div class="form-group paper-input floating-label">
+              <label for="inputError1" class="control-label input-group-floating-label">Email</label>
+              <div class="input-group">
+                <div class="input-group-addon"><i class="dic-perm-identity dic"></i></div>
+                <input type="email" class="form-control" id="inputEmail" required>
+                <span class="bar"></span>
+              </div>
+            </div>
+
+            <div class="form-group paper-input floating-label">
+              <label for="inputError1" class="control-label input-group-floating-label">Password</label>
+              <div class="input-group">
+                <div class="input-group-addon"><i class="dic-lock-outline dic"></i></div>
+                <input type="password" class="form-control" id="inputPassword">
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer card-footer-no-border card-footer-p16 text-center">
+            <button type="button" class="btn ripple-effect btn-primary btn-block" id="btnLogin">Login</button>
+            <div class="form-group clearfix">
+              <div class="checkbox pull-left">
+                <label class="dc-checkbox checkbox-ripple-effect">
+                  <input type="checkbox" checked="" value="" required>
+                  <span class="dc-checkbox"> Remember me</span>
+                </label>
+              </div>
+              <span class="pull-right forgot-password">
+                <a href="#">Forgot password?</a>
+              </span>
+            </div>
+            <p class="redirection-link">Don't have an account? <a href="#" class="login-register">Sign Up</a>. </p>
+
+          </div>
+
+        </form>
+      </div>
+
+      <div class="register-card">
+        <div class="card-header card-header-border text-center">
+          <div class="loginlogo">
+            <a href="#">
+              <img src="http://easypay.co.in/images/rsz_logohome.png">
+            </a>
+          </div>
+          <h3>Sign Up
+            <span>with
+              <strong>Easy Pay</strong>
+            </span>
+          </h3>
+        </div>
+        <form method="post" id="frmSignup">
+          <div class="card-body">
+
+            <div class="form-group paper-input floating-label">
+              <label for="inputError1" class="control-label input-group-floating-label">Name</label>
+              <div class="input-group">
+                <div class="input-group-addon"><i class="dic-perm-identity dic"></i></div>
+                <input type="text" class="form-control" id="txtName" required>
+                <span class="bar"></span>
+              </div>
+            </div>
+
+            <div class="form-group paper-input floating-label">
+              <label for="inputError1" class="control-label input-group-floating-label">Email address</label>
+              <div class="input-group">
+                <div class="input-group-addon"><i class="dic-email dic"></i></div>
+                <input type="email" class="form-control" id="txtEmail" required>
+                <span class="bar"></span>
+              </div>
+            </div>
+
+            <div class="form-group paper-input floating-label">
+              <label for="inputError1" class="control-label input-group-floating-label">Password</label>
+              <div class="input-group">
+                <div class="input-group-addon"><i class="dic-lock-outline dic"></i></div>
+                <input type="password" class="form-control" id="txtPassword" required>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer card-footer-no-border card-footer-p16 text-center">
+            <button type="button" class="btn ripple-effect btn-primary btn-block" id="btnSignup">Sign Up</button>
+            <p class="redirection-link">Already have an account? <a href="#" class="register-login">Sign In</a>. </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="forgot-password-card">
+
+        <form>
+          <div class="card-header card-header-border text-center">
+            <div class="loginlogo">
+              <a href="#">
+                <img src="theme/images/logo.png">
+              </a>
+            </div>
+            <h3>Forgot password?
+              <br>
+              <span>Submit your email address and we'll send you a link to reset your password.</span>
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="form-group paper-input floating-label">
+              <label for="inputError1" class="control-label input-group-floating-label">Email address</label>
+              <div class="input-group">
+                <div class="input-group-addon"><i class="dic-email dic"></i></div>
+                <input type="text" class="form-control" id="exampleInputAmount">
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer card-footer-no-border card-footer-p16 text-center">
+            <button type="button" class="btn ripple-effect btn-primary btn-block">Submit</button>
+            <p class="redirection-link"><a href="#" class="register-login">Sign In</a>.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <% include ../partials/footer %>
+	 <script src="javascripts/common.js" charset="utf-8"></script>
+	 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $(".login-register").click(function() {
+            $('.login-card').hide()
+            $('.forgot-password-card').hide();
+            $('.register-card').show();
+          });
+
+          $(".register-login").click(function() {
+            $('.register-card').hide()
+            $('.forgot-password-card').hide();
+            $('.login-card').show();
+          });
+          $(".forgot-password").click(function() {
+            $('.login-card').hide()
+            $('.register-card').hide()
+            $('.forgot-password-card').show();
+          });
+
+		  //Login Code
+		  $("#btnLogin").click(function(){
+		  if($("#frmLogin").valid())
+		  {
+		  var data={};
+		  data.email=$("#inputEmail").val();
+		  data.password=$("#inputPassword").val();
+		  var URL = window.location.origin + '/api/v1/user/user-signin-admin/';
+			  $.ajax({
+			   type: "POST",
+				  url: URL,
+				  data: data,
+				 beforeSend: function(xhr) {
+							xhr.setRequestHeader('api-key', '1');
+							xhr.setRequestHeader('udid', getUDID());
+							xhr.setRequestHeader('device-type', getDeviceType());
+					},
+				   
+				   success: function(data) {
+					 if(data.status==true)
+					 {
+						window.location.href="/dashboard";
+					 }
+					 else if(data.status==false)
+					 {
+						alert(data.error.message);
+						$("#inputEmail").focus();
+					 }
+
+				   },
+				   error: function() {
+					 alert("Error");
+				   }
+				 });
+			}
+			});
+		
+			//Sign Up code
+			$("#btnSignup").click(function(){
+				if($("#frmSignup").valid())
+				{
+				var data={};
+				data.name=$("#txtName").val();
+				data.email=$("#txtEmail").val();
+				data.password=$("#txtPassword").val();
+
+				var URL = window.location.origin + '/api/v1/user/user-signup-admin/';
+
+					 $.ajax({
+			   type: "POST",
+				  url: URL,
+				  data: data,
+				 beforeSend: function(xhr) {
+							xhr.setRequestHeader('api-key', '1');
+							xhr.setRequestHeader('udid', getUDID());
+							xhr.setRequestHeader('device-type', getDeviceType());
+					},
+				   
+				   success: function(data) {
+					 if(data.status==true)
+					 {
+						window.location.href="/";
+					 }
+					 else if(data.status==false)
+					 {
+						alert(data.error.message);
+					}
+
+				   },
+				   error: function() {
+					 alert("Error");
+				   }
+				 });
+				}
+			})
+        });
+      </script>
+  </footer>
+
+</body>
+
+</html>

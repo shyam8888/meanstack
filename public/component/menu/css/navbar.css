@@ -1,0 +1,86 @@
+/*DC Navbar*/
+.dc-header.navbar > .container .navbar-brand, .dc-header.navbar > .container-fluid .navbar-brand{ margin-left: 0;}
+.dc-header .navbar-brand{ float: left; padding: 8px 16px 8px 8px; font-size:24px; line-height: 48px; height: inherit;}
+@media (max-width: 767px) {
+.dc-header .navbar-brand{ line-height:40px;}
+}
+@media (min-width: 768px) {
+.dc-header .navbar { border-radius: 0;}
+}
+@media (min-width: 768px) {
+.dc-header.navbar > .container .navbar-brand, .dc-header.navbar > .container-fluid .navbar-brand { margin-left:0px;}
+}
+.dc-header .navbar-nav > li > a { line-height: 24px;}
+@media (min-width: 768px) {
+.dc-header .navbar-nav > li > a { padding-top:20px; padding-bottom:20px;}
+} 
+.dc-header .navbar-nav > li > a{ text-transform:uppercase;}
+.dc-header .navbar-toggle{margin-top: 16px; float:left;}
+.dc-header.navbar .btn.btn-circle{margin: 12px 0; padding:0;}
+@media (max-width: 767px) {
+.dc-header.navbar .btn.btn-circle{margin: 8px 0;}
+}
+.dc-header .navbar-right-icon{ margin-left:16px;}
+.dc-header .navbar-right-icon a{ display:inline-block;}
+.dc-header .navbar-toggle{border-radius: 50%; border:none; height:40px; width:40px; padding:10px; margin-top: 12px; margin-right:8px;}
+.dc-header .navbar-toggle .icon-bar{ width:20px;}
+
+.sidebar-overlay, .left-sidebar-overlay, .right-sidebar-overlay { visibility: hidden; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; background: #000; z-index:998; -webkit-transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); -moz-transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0);}
+.sidebar-overlay.active, .left-sidebar-overlay.active, .right-sidebar-overlay.active { opacity: 0.5; visibility: visible; -webkit-transition-delay: 0; -moz-transition-delay: 0; transition-delay: 0;}
+
+/*Menu in right sidebar*/
+@media (max-width: 767px) {
+.dc-header .navbar-header{padding:0 8px;}
+.dc-header.navbar-fixed-top, .dc-header.navbar-fixed-bottom{z-index: 998;}
+.dc-navbar-sidebar{position: relative; display: block; min-height: 100%; overflow-y: auto; overflow-x: hidden; border: none; -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);-o-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); background:#fff;}
+.dc-navbar-sidebar:before, .dc-navbar-sidebar:after { content: " "; display: table;}
+.dc-navbar-sidebar:after { clear: both;}
+.dc-navbar-sidebar::-webkit-scrollbar-track { border-radius: 2px;}
+.dc-navbar-sidebar::-webkit-scrollbar { width: 5px; background-color: #F7F7F7;}
+.dc-navbar-sidebar::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #BFBFBF;}
+
+/* -- Navebar DropDown --------------------------- */
+.navbar-nav .dropdown-menu {position: relative; width: 100%; margin: 0; padding: 0; border: none; border-radius: 0; -webkit-box-shadow: none; box-shadow: none;}
+.navbar-nav .dropdown .dropdown-menu > li > a, .navbar-nav .dropdown .dropdown-menu .dropdown-header{ padding: 4px 16px 4px 32px; line-height:24px;}
+
+/* -- sidebar show/hide ------------------------- */
+.dc-navbar-sidebar { min-width: 85%; width: 85%; -webkit-transform: translate3d(-100%, 0, 0); -moz-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}
+.dc-navbar-sidebar.open { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.dc-navbar-sidebar{position: fixed; top: 0; bottom: 0; z-index:999;}
+.dc-navbar-sidebar { left: 0; box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);}
+.dc-header .navbar-right-icon{ position:absolute; top:0; right:8px;}
+
+/* -- sidebar nav ------------------------------- */
+.dc-navbar-sidebar .navbar-nav { margin: 0; padding: 0;}
+.dc-navbar-sidebar .navbar-nav a{ position: relative; cursor: pointer; user-select: none; display: block; padding:12px 16px; text-decoration: none; clear: both; font-weight:400; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; -webkit-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; line-height:24px;}
+.dc-navbar-sidebar .navbar-nav a:hover, .dc-navbar-sidebar .navbar-nav li a:focus { -webkit-box-shadow: none; box-shadow: none; outline: none;}
+.container > .navbar-collapse.dc-navbar-sidebar, .container-fluid > .navbar-collapse.dc-navbar-sidebar{ margin-left:0; margin-right:0; padding:0;}
+.dc-navbar-sidebar .navbar-nav{ display:inline-block; width:100%;}
+}
+
+/* -- My Account -------------------------------- */
+.my-account > a{ padding-top:12px; padding-bottom:12px; padding-right:0; padding-left:8px; display: block;}
+.my-account .dropdown-menu{min-width:100%;}
+
+/* -- Nav Bar -- */
+.dc-header .my-account{ margin-right: -15px; margin-left:16px;}
+.dc-header .my-account .media-body{ width: auto; height:40px;}
+
+@media (max-width: 767px) {
+.my-account a{ padding-left:16px; padding-right:16px;}
+.my-account .dropdown-menu{ position:relative; box-shadow: inherit; border-bottom:transparent solid 1px}
+.my-account > a{ background-size:cover; color:#fff;}
+.dc-header .my-account{ width:100%; margin-left:0; margin-right:0;}
+.dc-header .my-account .media-body{ width:100%;}
+/* -- Themes--*/
+.dc-header .my-account .dropdown-menu{ border-color:#e5e5e5}
+
+/* -- Sidebar -- */
+.dc-navbar-sidebar .my-account > a{ background-color:#333; background-size:cover; color:#fff;}
+.dc-navbar-sidebar .my-account > a:hover, .sidebar .my-account > a:focus{ background-color:#333;}
+
+}
+
+/* -- DC Navbar Form ---------------------------- */
+.dc-header .navbar-form{ padding-top:7px; padding-bottom:6px;}
+

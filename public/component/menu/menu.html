@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<title>Menu</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top dc-header z-depth">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+		
+        <div class="navbar-header">
+          <button class="ripple-effect navbar-toggle navbar-sidebar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand navbar-brand-custome">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse dc-navbar-sidebar">
+		
+		  <div class="dropdown my-account pull-right">
+              <a href="#" class="btn-user dropdown-toggle media" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
+				  <div class="media-left">
+					  <img src="../../assets/images/avatar-icon-40x40.png" width="40" height="40" alt="avatar">
+				  </div>
+				<div class="media-body media-middle">
+					Abhishek Desai
+				</div>
+				<div class="media-right media-middle">
+					<i class="dic-more-vert dic"></i>
+				</div>
+			  </a>
+			  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+			  	<li><a href="profile.html">Edit Profile</a></li>
+				<li><a href="login.html">Logout</a></li>
+			  </ul>
+			</div>
+				
+	      <ul class="nav navbar-nav">
+            <li><a class="ripple-effect" href="javascript:void(0);">Link <span class="sr-only">(current)</span></a></li>
+            <li><a class="ripple-effect" href="javascript:void(0);">Link</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="ripple-effect dropdown-toggle" data-sidebar="true" href="javascript:void(0);">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="ripple-effect" href="javascript:void(0);">Action</a></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">Another action</a></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="ripple-effect" href="javascript:void(0);">Link</a></li>
+            <li class="dropdown">
+              <a aria-expanded="false" role="button" data-toggle="dropdown" data-sidebar="true" class="ripple-effect dropdown-toggle" href="javascript:void(0);">Dropdown <span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                <li><a class="ripple-effect" href="javascript:void(0);">Action</a></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">Another action</a></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a class="ripple-effect" href="javascript:void(0);">Separated link</a></li>
+              </ul>
+            </li>
+		  </ul>
+		  
+        </div><!-- /.navbar-collapse -->
+		
+      </div><!-- /.container-fluid -->
+	  <div class="sidebar-overlay"></div>
+    </nav>
+	
+<p>Dropdown Menu Bottom Right</p>
+<span class="dropdown clearfix">
+	<button class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary" type="button" data-toggle="dropdown" aria-expanded="true"><span class="dic-more-vert dic"></span></button>
+	<ul aria-labelledby="dropdownMenuDivider" role="menu" class="dropdown-menu">
+		<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+		<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+		<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+		<li class="divider" role="presentation"></li>
+		<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+	</ul>
+</span>
+
+<script src="../../assets/js/jquery.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap.js"></script> 
+<script src="../sidebar/js/sidebar.js" language="javascript" type="text/javascript"></script>
+<script src="../../assets/js/dmaterial.js"></script>
+
+</body>
+</html>

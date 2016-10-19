@@ -1,0 +1,339 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/dmaterial-1.2.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/dmaterial-theme.css" />
+    <title>MeanStack1</title>
+
+
+</head>
+
+<body ng-app="meanApp">
+
+   <!-- <div ng-include="'/components/header.html'"></div>-->
+    <nav class="navbar navbar-inverse dc-header navbar-fixed-top z-depth">
+        <div class="container-fluid">
+
+            <!-- Sidebar Toggle Button-->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="btn btn-sm btn-circle btn-flat ripple-effect pull-left margin-r8 sidebar-toggle">
+                    <span class="dic-menu dic"></span>
+                </a>
+                <a class="navbar-brand" href="javascript:void(0);">Brand</a>
+            </div>
+
+            <!-- Navbar Right icon -->
+            <div class="navbar-right-icon pull-right">
+                <a href="javascript:void(0);" class="btn btn-sm btn-circle btn-flat ripple-effect">
+                    <span class="dic-search dic"></span>
+                </a>
+                <a href="javascript:void(0);" class="btn btn-sm btn-circle btn-flat ripple-effect topbar-toggle visible-xs-inline-block" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="dic-more-vert dic"></span>
+                </a>
+                <a href="javascript:void(0);" class="btn btn-sm btn-circle btn-flat ripple-effect sidebar-toggle-right"><i class="dic-more-horiz dic"></i></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void(0);" class="ripple-effect">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="javascript:void(0);" class="ripple-effect">Link</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="ripple-effect dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="javascript:void(0);" class="ripple-effect">Action</a></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">Another action</a></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0);" class="ripple-effect">Link</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="ripple-effect dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="javascript:void(0);" class="ripple-effect">Action</a></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">Another action</a></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);" class="ripple-effect">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section id="dc-main">
+
+        <!-- Overlay for sidebar -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Left sidebar -->
+
+        <aside class="sidebar sidebar-default sidebar-stacked sidebar-left open z-depth" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="dropdown my-account">
+                    <a href="#" class="btn-user dropdown-toggle media" data-toggle="dropdown" aria-expanded="false">
+                        <div class="media-left">
+                            <img width="40" height="40" src="assets/images/avatar-icon-40x40.png" class="img-circle" alt="avatar">
+                        </div>
+                        <div class="media-body media-middle">D,Material Admin</div>
+                        <div class="media-right media-middle"><i class="dic-more-vert dic"></i></div>
+                    </a>
+                    <ul class="dropdown-menu" style="display: none;">
+                        <li> <a tabindex="-1" href="profile.html" class="ripple-effect"><i class="dic-person dic media-left media-middle"></i> <span class="media-body">View Profile</span></a></li>
+                        <li> <a tabindex="-1" href="javascript:void(0);" class="ripple-effect"><i class="dic-settings dic media-left media-middle"></i> <span class="media-body">Settings</span></a></li>
+                        <li> <a tabindex="-1" href="javascript:void(0);" class="ripple-effect"><i class="dic-history dic media-left media-middle"></i> <span class="media-body">Logout</span></a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </li>
+                <li><a class="ripple-effect" href="dashboard.html">Dashboard</a></li>
+                <li><a class="ripple-effect" href="index.html">User</a></li>
+                <li class="dropdown"><a class="ripple-effect" href="form.html">Form</a></li>
+                <li class="dropdown"><a class="ripple-effect" href="profile.html">Profile</a></li>
+                <li class="dropdown"><a class="ripple-effect" href="login.html">Login</a></li>
+                <li><a class="ripple-effect" href="inbox.html">Inbox</a></li>
+                <li><a class="ripple-effect" href="notifications.html">Notifications</a></li>
+            </ul>
+        </aside>
+
+        <!--<div ng-include="'components/leftsidebar.html'"></div>-->
+        <!-- Start Content -->
+        <div class="dc-content" id="content">
+            <div id="dashboard">
+                <h3>Card</h3>
+
+                <!-- Column Start -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="card z-depth">
+                            <div class="card-header">
+                                <h2 class="card-media-heading">Title goes here</h2>
+                                <span class="card-media-text">Secondary text</span>
+                            </div>
+                            <div class="card-body">
+                                Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information
+                                or actions.
+                            </div>
+                            <div class="card-action">
+                                <button class="btn btn-flat ripple-effect btn-primary" type="button">Primary</button>
+                                <button type="button" class="btn btn-flat ripple-effect btn-default">Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column End -->
+                <!-- Column Start -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card card-default z-depth">
+                            <div class="card-header">
+                                <div class="media-left">
+                                    <a href="#" class="avatar-list-img">
+                                        <img width="40" height="40" src="https://www.letsalign.com/assets/img/portfolio/23.png">
+                                    </a>
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h3 class="card-media-heading">Two-line item</h3>
+                                    <span class="card-media-text">Secondary text</span>
+                                </div>
+                            </div>
+                            <div class="card-media">
+                                <img width="1184" height="666" class="img-responsive" src="https://www.letsalign.com/assets/img/portfolio/23.png">
+                            </div>
+                            <div class="card-heading">
+                                <h2 class="card-media-heading">Title goes here</h2>
+                                <span class="card-media-text">Secondary text</span>
+                            </div>
+                            <div class="card-body">
+                                Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information
+                                or actions.
+                            </div>
+                            <div class="card-action">
+                                <button type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary">
+                                    <span class="dic dic-share"></span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary">
+                                    <span class="dic dic-thumb-up"></span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary">
+                                    <span class="dic dic-drafts"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card card-default z-depth">
+                            <div class="card-header">
+                                <div class="media-left">
+                                    <a href="#" class="avatar-list-img">
+                                        <img width="40" height="40" src="https://www.letsalign.com/assets/img/portfolio/23.png">
+                                    </a>
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h3 class="card-media-heading">Two-line item</h3>
+                                    <span class="card-media-text">Secondary text</span>
+                                </div>
+                            </div>
+                            <div class="card-media">
+                                <img width="1184" height="666" class="img-responsive" src="https://www.letsalign.com/assets/img/portfolio/23.png">
+                            </div>
+                            <div class="card-heading">
+                                <h2 class="card-media-heading">Title goes here</h2>
+                                <span class="card-media-text">Secondary text</span>
+                            </div>
+                            <div class="card-body">
+                                Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information
+                                or actions.
+                            </div>
+                            <div class="card-action">
+                                <button type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary">
+                                    <span class="dic dic-share"></span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary">
+                                    <span class="dic dic-thumb-up"></span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary">
+                                    <span class="dic dic-drafts"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column End -->
+                <!-- Column Start -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 Column End -->
+                <!-- 4 Column Start -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 Column End -->
+                <!-- 6 Column Start -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card card-default z-depth card-wp">
+                            <div class="card-body">
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 Column End -->
+            </div>
+        </div>
+
+        <!-- Right sidebar -->
+        <div ng-include="'components/rightsidebar.html'"></div>
+        <div ng-include="'components/footertext.html'"></div>
+    </section>
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/assets/js/dmaterial.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <!--<div ng-include="'components/footer.html'"></div>-->
+    <script type="text/javascript" src="component/sidebar/js/sidebar.js"></script>
+
+</body>
+
+</html>

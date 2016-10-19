@@ -1,0 +1,65 @@
+/*nav */
+.dc-tabs .nav > li > a,
+.dc-tabs .nav-tabs > li.active > a, .dc-tabs .nav-tabs > li.active > a:hover, .dc-tabs .nav-tabs > li.active > a:focus { color:#fff; background-color:transparent;}
+
+/*about*/
+.about-panel { background:#fff;}
+.about-panel dl dt {color:#555;}
+.about-panel dl dd {color:rgba(0, 0, 0, 0.7);}
+
+/*templates*/
+.template-panel {  /*#fec917;*/}
+
+/*component*/
+/*.component-panel { background-color:#50bfdd;}*/
+
+/*style*/
+.styles { background-color:#8F4099;}
+
+/*customise*/
+.customise { background-color:#191E80;}
+
+
+
+/*----------------------------------- Media Queries ---------------------------*/
+
+@media only screen and (min-width:1366px) and (max-width:1900px){
+	
+}
+
+@media only screen and (min-width:1101px) and (max-width:1366px){
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1100px){
+
+}
+
+@media only screen and (min-width:900px) and (max-width:1024px){
+
+}
+
+@media only screen and (min-width:768px) and (max-width:899px){
+
+}
+
+@media screen and (max-width: 767px){
+.dc-tabs .nav > li > a, .dc-tabs .nav-tabs > li.active > a, .dc-tabs .nav-tabs > li.active > a:hover, .dc-tabs .nav-tabs > li.active > a:focus { color:#0047B8;}
+.dc-tabs .nav-tabs > li.active > a, .dc-tabs .nav-tabs > li.active > a:hover, .dc-tabs .nav-tabs > li.active > a:focus {background-color:#eee;}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .dc-header .navbar-toggle { background-color: rgba(256,256,256,0.6);}
+.navbar-inverse .navbar-toggle .icon-bar { background-color:#0d4565;}
+}
+
+@media only screen and (min-width:481px) and (max-width: 767px){
+
+}
+@media only screen and (min-width:479px) and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 479px){
+
+}
+
+
+/*----------------------------------- Media Queries ---------------------------*/

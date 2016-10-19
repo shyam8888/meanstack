@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>demo</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/global.css" />
+</head>
+	<style>
+     * { margin:0; padding:0;}
+	 body { padding:100px 0; margin:0 auto; width:600px; font-family:Arial, Helvetica, sans-serif;}
+	 .main { width:100%; float:left; margin-bottom:30px;}
+	 
+    .custom-dropdown { position:relative; float:left; width:150px; position:relative;}
+    .custom-dropdown button { width:100%; padding:6px 8px; background:none; border:none; font-size:14px; text-align:left; text-transform:capitalize; line-height:17px; font-family:Arial, Helvetica, sans-serif;} 	
+    .custom-dropdown .caret { width:0; height:0; position:absolute; display:inline-block; right:10px; top:50%; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid #000; transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%);}
+	.customDrop {  position:absolute;  top:100%; width:100%; background:#fff; box-shadow:0 0 3px 0 rgba(0,0,0,0.3); z-index:10;  display:none;}
+	.customDrop li { list-style:none; padding:7px 10px; font-size:14px; text-transform:capitalize;}
+	.customDrop li:hover { background:#f1f1f1;}
+    </style>
+<body>
+<div class="card z-depth">
+<div class="card-body">
+<div class="main">
+	<select class="custom">
+		<option value="city0">Select area</option>
+		<option value="city1">area 1</option>
+		<option value="city2">area 2</option>
+		<option value="city3">area 3</option>
+	</select>
+</div>
+<div class="main">
+	<select class="custom">
+		<option value="city1">Select city</option>
+		<option value="city2">city 1</option>
+		<option value="city3">city 2</option>
+		<option value="city4">city 3</option>
+		<option value="city5">city 4</option>
+		<option value="city6">city 5</option>
+	</select>
+</div>
+
+<div class="main">
+	<select class="custom">
+		<option value="country1">Select country</option>
+		<option value="country2">country 1</option>
+		<option value="country3">country 2</option>
+	</select>
+</div>
+
+<div class="main">
+<select class="custom">
+	<option value="world1">Select world</option>
+	<option value="world2">world 1</option>
+	<option value="world3">world 2</option>
+	<option value="world4">world 3</option>
+	<option value="world5">world 4</option>
+	<option value="world6">world 5</option>
+	<option value="world7">world 6</option>
+	<option value="world8">world 7</option>
+	<option value="world9">world 8</option>
+</select>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="custom-select.js"></script> 
+<script>
+	$(document).ready(function() {
+		$('.custom').customSelectBox();
+	});
+</script>
+
+</body>
+</html>

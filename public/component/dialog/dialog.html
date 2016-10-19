@@ -1,0 +1,939 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<title>Dialog</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/global.css" />
+</head>
+<style>
+.notification-trigger {
+	margin: 0px 8px 8px 0;
+}
+textarea {
+	resize: vertical;
+	min-height: 32px;
+}
+</style>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-push-2">
+			<h1 id="dialog" class="page-header">Dialog</h1>
+			<div class="card z-depth">
+				<div class="card-body">
+					<div id="dialog" class="page active" style="display: block;">
+						<div class="normal">
+							<h3>Normal Dialog</h3>
+							<button data-target="#simple-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Simple</button>
+							<button data-target="#complete-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Header &amp; Footer</button>
+							<button data-target="#form-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Form</button>
+							<button data-target="#list-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">List Selection</button>
+							<button data-target="#alert-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Alert</button>
+							<button data-target="#simple-listing-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Listing</button>
+							<button data-target="#avatar-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Avatar Listing</button>
+							<button data-target="#listing-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Icon Listing</button>
+							<button data-target="#center-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Media</button>
+							<button data-target="#media-dialog" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Media top</button>
+							<!-- Simple Dialog -->
+							<div tabindex="-1" class="modal fade" id="simple-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											
+											<nav class="dc-tabs" id="dctab">
+												<div class="scroller-left"> <i class="dic-chevron-left dic"></i> </div>						  	
+												<!-- Nav tabs -->
+												<div class="scrollable-wrapper dc-tabs-bg z-depth" style="cursor: grab;">
+													<div class="slider"></div>
+													<ul class="nav nav-tabs dc-list" role="tablist">
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+														<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+														<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+														<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+														
+														
+													
+													</ul>
+												</div>
+												<div class="scroller-right"><i class="dic-chevron-right dic"></i></div>						  
+											</nav>
+											<div class="card z-depth">
+												<!-- Tab panes -->
+												<div class="tab-content card-body">
+													<div role="tabpanel" class="tab-pane active" id="home2">D'Material is providing developed templates which lets you use the bootstrap and new Google Material Design. Here are some of our D'Material theme templates which are created with bootstrap and the material design.</div>
+													<div role="tabpanel" class="tab-pane" id="profile2">1 D'Material is providing developed templates which lets you use the bootstrap and new Google Material Design. Here are some of our D'Material theme templates which are created with bootstrap and the material design.</div>
+													<div role="tabpanel" class="tab-pane" id="messages2">2 D'Material is providing developed templates which lets you use the bootstrap and new Google Material Design. Here are some of our D'Material theme templates which are created with bootstrap and the material design.</div>
+													<div role="tabpanel" class="tab-pane" id="settings2">3 D'Material is providing developed templates which lets you use the bootstrap and new Google Material Design. Here are some of our D'Material theme templates which are created with bootstrap and the material design.</div>
+												</div>
+											</div>
+
+											
+											<!--<p>E dolore commodo, id anim aute sint cupidatat eu est anim tamen ad possumus,
+												legam officia firmissimum. Eram deserunt domesticarum, iis ita praetermissum,
+												nam aliquip quo probant, incididunt et occaecat an nam enim exquisitaque a
+												nescius velit admodum, non ad cohaerescant, probant o nulla tempor. Aute aut te
+												quis arbitror ubi ne aliqua consequat aliquip. Ad sunt laborum senserit, de do
+												quem possumus. Sint tractavissent cupidatat aute possumus ita elit ad cupidatat.</p> -->
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with header and footer -->
+							<div tabindex="-1" class="modal fade" id="complete-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header"> 
+											<!--<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+											<h2 class="card-media-heading">Header &amp; Footer</h2>
+											<span class="card-media-text">Secondary text</span> </div>
+										<div class="modal-body">
+											<p>Fore aut non quem incididunt, varias reprehenderit deserunt quem offendit,
+												cillum proident ne reprehenderit, quem ad laborum, quo possumus praetermissum,
+												si ne illustriora, hic appellat coniunctione, do labore aliqua quo probant. In
+												probant voluptatibus quo mentitum est laboris. Quorum mandaremus graviterque.
+												Mentitum id velit, dolor aut litteris, ea varias illustriora, ita commodo ita
+												ingeniis, iis nulla appellat incurreret, aut irure amet summis pariatur ita ubi
+												quis dolore veniam proident, consequat sed ingeniis.</p>
+										</div>
+										<div class="modal-action bordered text-right">
+											<button data-dismiss="modal" class="btn btn-flat ripple-effect btn-primary" type="button">Agree</button>
+											<button data-dismiss="modal" type="button" class="btn btn-flat ripple-effect btn-default">Disagree</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with List selection -->
+							<div tabindex="-1" class="modal fade" id="list-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bordered"> 
+											<!--<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+											<h3 class="card-media-heading">List Selection</h3>
+										</div>
+										<div class="modal-body">
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Ahmedabad" value="option1">
+												<label for="Ahmedabad">Ahmedabad</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Surat" value="option1">
+												<label for="Surat">Surat</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Rajkot" value="option1">
+												<label for="Rajkot">Rajkot</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Vadodara" value="option1">
+												<label for="Vadodara">Vadodara</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Mehsana" value="option1">
+												<label for="Mehsana">Mehsana</label>
+												</label>
+											</div>
+										</div>
+										<div class="modal-action bordered text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Ok</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog Alert -->
+							<div tabindex="-1" class="modal fade" id="alert-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body"> Would you like to proceed? </div>
+										<div class="modal-action text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Save changes</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Discard</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Form Elements -->
+							<div tabindex="-1" class="modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Form Element</h2>
+										</div>
+										<div class="modal-body">
+											<form class="form-horizontal">
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Name</label>
+													<input type="text" class="mat-input form-control" id="name" value="">
+													<span class="help-text">Input is required!</span> </div>
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Email Address</label>
+													<input type="text" class="mat-input form-control" id="email" value="">
+												</div>
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Mobile No.</label>
+													<input type="text" class="mat-input form-control" id="mobil" value="">
+												</div>
+												<div class="form-group paper-input floating-label">
+													<label class="control-label">Message</label>
+													<textarea required class="form-control"></textarea>
+												</div>
+												<label class="checkbox-inline custom-checkbox checkbox-ripple-effect">
+													<input type="checkbox" value="">
+													<span class="dc-checkbox"> Accept Terms and conditions</span> </label>
+											</form>
+										</div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary" type="button">Save changes</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default" type="button">Discard</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Normal List -->
+							<div tabindex="-1" class="modal fade" id="simple-listing-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Listing</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group dc-textlist">
+												<li class="list-group-item">Cras justo odio</li>
+												<li class="list-group-item">Dapibus ac facilisis inDapibus ac facilisis in Dapibus ac facilisis in</li>
+												<li class="list-group-item">Morbi leo risus</li>
+												<li class="list-group-item">Porta ac consectetur ac</li>
+												<li class="list-group-item">Vestibulum at eros</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Avatar List -->
+							<div tabindex="-1" class="modal fade" id="avatar-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Avatar List</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group sline-avatar">
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Porta ac consectetur ac </div>
+												</li>
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Dapibus ac facilisis in </div>
+												</li>
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Porta ac consectetur ac </div>
+												</li>
+											</ul>
+										</div>
+										<div class="modal-action text-right bordered">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Listing icon -->
+							<div tabindex="-1" class="modal fade" id="listing-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Icon Listing</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group dc-iconlist">
+												<li class="list-group-item"> <i class="dic dic-mood media-left"></i> <span class="media-body">Cras justo odio</span> </li>
+												<li class="list-group-item"><i class="dic dic-notifications media-left media-middle"></i>
+													<div class="media-body">Dapibus ac facilisis in</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-person-add media-left"></i>
+													<div class="media-body">Morbi leo risus</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-share media-left"></i>
+													<div class="media-body">Porta ac consectetur ac</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-drive-eta media-left"></i>
+													<div class="media-body">Vestibulum at eros</div>
+												</li>
+											</ul>
+										</div>
+										<div class="modal-action text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Media -->
+							<div tabindex="-1" class="modal fade" id="center-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img width="40" height="40" src="../list/img/40x40.png"> </a> </div>
+											<div class="media-body media-middle">
+												<h3 class="card-media-heading">Two-line item</h3>
+												<span class="card-media-text">Secondary text</span> </div>
+										</div>
+										<div class="modal-media"> <img width="1184" height="666" class="img-responsive" src="../../assets/images/profile-pic.png"> </div>
+										<div class="modal-body"> Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions. </div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-share"></span></button>
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-thumb-up"></span></button>
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-drafts"></span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Media, Title, Action, and Description area -->
+							<div tabindex="-1" class="modal fade" id="media-dialog" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-media"> <img width="1184" height="666" class="img-responsive" src="../../assets/images/profile-pic.png"> </div>
+										<div class="card-header">
+											<h2 class="card-media-heading">Title goes here</h2>
+											<span class="card-media-text">Secondary text</span> </div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Primary</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Action</button>
+										</div>
+										<div class="modal-body"> Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions. </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="Small">
+							<h3>Small Dialog</h3>
+							<button data-target="#simple-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Simple</button>
+							<button data-target="#complete-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Header &amp; Footer</button>
+							<button data-target="#form-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Form</button>
+							<button data-target="#list-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">List Selection</button>
+							<button data-target="#alert-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Alert</button>
+							<button data-target="#simple-listing-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Listing</button>
+							<button data-target="#avatar-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Avatar Listing</button>
+							<button data-target="#listing-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Icon Listing</button>
+							<button data-target="#center-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Media</button>
+							<button data-target="#media-dialog-sm" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Media top</button>
+							<!-- Simple Dialog -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="simple-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-body">
+											<p>E dolore commodo, id anim aute sint cupidatat eu est anim tamen ad possumus,
+												legam officia firmissimum. Eram deserunt domesticarum, iis ita praetermissum,
+												nam aliquip quo probant, incididunt et occaecat an nam enim exquisitaque a
+												nescius velit admodum, non ad cohaerescant, probant o nulla tempor. Aute aut te
+												quis arbitror ubi ne aliqua consequat aliquip. Ad sunt laborum senserit, de do
+												quem possumus. Sint tractavissent cupidatat aute possumus ita elit ad cupidatat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with header and footer -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="complete-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header"> 
+											<!--<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+											<h2 class="card-media-heading">Header &amp; Footer</h2>
+											<span class="card-media-text">Secondary text</span> </div>
+										<div class="modal-body">
+											<p>Fore aut non quem incididunt, varias reprehenderit deserunt quem offendit,
+												cillum proident ne reprehenderit, quem ad laborum, quo possumus praetermissum,
+												si ne illustriora, hic appellat coniunctione, do labore aliqua quo probant. In
+												probant voluptatibus quo mentitum est laboris. Quorum mandaremus graviterque.
+												Mentitum id velit, dolor aut litteris, ea varias illustriora, ita commodo ita
+												ingeniis, iis nulla appellat incurreret, aut irure amet summis pariatur ita ubi
+												quis dolore veniam proident, consequat sed ingeniis.</p>
+										</div>
+										<div class="modal-action bordered text-right">
+											<button data-dismiss="modal" class="btn btn-flat ripple-effect btn-primary" type="button">Agree</button>
+											<button data-dismiss="modal" type="button" class="btn btn-flat ripple-effect btn-default">Disagree</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with List selection -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="list-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header bordered"> 
+											<!--<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+											<h3 class="card-media-heading">List Selection</h3>
+										</div>
+										<div class="modal-body">
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Ahmedabad1" value="option1">
+												<label for="Ahmedabad1">Ahmedabad</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Surat1" value="option1">
+												<label for="Surat1">Surat</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Rajkot1" value="option1">
+												<label for="Rajkot1">Rajkot</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Vadodara1" value="option1">
+												<label for="Vadodara1">Vadodara</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Mehsana1" value="option1">
+												<label for="Mehsana1">Mehsana</label>
+												</label>
+											</div>
+										</div>
+										<div class="modal-action bordered text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Ok</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog Alert -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="alert-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-body"> Would you like to proceed? </div>
+										<div class="modal-action text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Save changes</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Discard</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Form Elements -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="form-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Form Element</h2>
+										</div>
+										<div class="modal-body">
+											<form class="form-horizontal">
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Name</label>
+													<input type="text" class="mat-input form-control" id="name" value="">
+													<span class="help-text">Input is required!</span> </div>
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Email Address</label>
+													<input type="text" class="mat-input form-control" id="email" value="">
+												</div>
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Mobile No.</label>
+													<input type="text" class="mat-input form-control" id="mobil" value="">
+												</div>
+												<div class="form-group paper-input floating-label">
+													<label class="control-label">Message</label>
+													<textarea required class="form-control"></textarea>
+												</div>
+												<label class="checkbox-inline custom-checkbox checkbox-ripple-effect">
+													<input type="checkbox" value="">
+													<span class="dc-checkbox"> Accept Terms and conditions</span> </label>
+											</form>
+										</div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary" type="button">Save changes</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default" type="button">Discard</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Normal List -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="simple-listing-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Listing</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group dc-textlist">
+												<li class="list-group-item">Cras justo odio</li>
+												<li class="list-group-item">Dapibus ac facilisis inDapibus ac facilisis in Dapibus ac facilisis in</li>
+												<li class="list-group-item">Morbi leo risus</li>
+												<li class="list-group-item">Porta ac consectetur ac</li>
+												<li class="list-group-item">Vestibulum at eros</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Avatar List -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="avatar-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Avatar List</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group sline-avatar">
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Porta ac consectetur ac </div>
+												</li>
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Dapibus ac facilisis in </div>
+												</li>
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Porta ac consectetur ac </div>
+												</li>
+											</ul>
+										</div>
+										<div class="modal-action text-right bordered">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Listing icon -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="listing-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Icon Listing</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group dc-iconlist">
+												<li class="list-group-item"> <i class="dic dic-mood media-left"></i> <span class="media-body">Cras justo odio</span> </li>
+												<li class="list-group-item"><i class="dic dic-notifications media-left media-middle"></i>
+													<div class="media-body">Dapibus ac facilisis in</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-person-add media-left"></i>
+													<div class="media-body">Morbi leo risus</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-share media-left"></i>
+													<div class="media-body">Porta ac consectetur ac</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-drive-eta media-left"></i>
+													<div class="media-body">Vestibulum at eros</div>
+												</li>
+											</ul>
+										</div>
+										<div class="modal-action text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Media -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="center-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img width="40" height="40" src="../list/img/40x40.png"> </a> </div>
+											<div class="media-body media-middle">
+												<h3 class="card-media-heading">Two-line item</h3>
+												<span class="card-media-text">Secondary text</span> </div>
+										</div>
+										<div class="modal-media"> <img width="1184" height="666" class="img-responsive" src="../../assets/images/profile-pic.png"> </div>
+										<div class="modal-body"> Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions. </div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-share"></span></button>
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-thumb-up"></span></button>
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-drafts"></span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Media, Title, Action, and Description area -->
+							<div tabindex="-1" class="modal fade bs-example-modal-sm" id="media-dialog-sm" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-media"> <img width="1184" height="666" class="img-responsive" src="../../assets/images/profile-pic.png"> </div>
+										<div class="card-header">
+											<h2 class="card-media-heading">Title goes here</h2>
+											<span class="card-media-text">Secondary text</span> </div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Primary</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Action</button>
+										</div>
+										<div class="modal-body"> Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions. </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="Small">
+							<h3>Large Dialog</h3>
+							<button data-target="#simple-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Simple</button>
+							<button data-target="#complete-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Header &amp; Footer</button>
+							<button data-target="#form-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Form</button>
+							<button data-target="#list-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">List Selection</button>
+							<button data-target="#alert-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Alert</button>
+							<button data-target="#simple-listing-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Listing</button>
+							<button data-target="#avatar-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Avatar Listing</button>
+							<button data-target="#listing-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Icon Listing</button>
+							<button data-target="#center-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Media</button>
+							<button data-target="#media-dialog-lg" data-toggle="modal" class="btn ripple-effect btn-default z-depth notification-trigger" type="button">Media top</button>
+							<!-- Simple Dialog -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="simple-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-body">
+											<p>E dolore commodo, id anim aute sint cupidatat eu est anim tamen ad possumus,
+												legam officia firmissimum. Eram deserunt domesticarum, iis ita praetermissum,
+												nam aliquip quo probant, incididunt et occaecat an nam enim exquisitaque a
+												nescius velit admodum, non ad cohaerescant, probant o nulla tempor. Aute aut te
+												quis arbitror ubi ne aliqua consequat aliquip. Ad sunt laborum senserit, de do
+												quem possumus. Sint tractavissent cupidatat aute possumus ita elit ad cupidatat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with header and footer -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="complete-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header"> 
+											<!--<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+											<h2 class="card-media-heading">Header &amp; Footer</h2>
+											<span class="card-media-text">Secondary text</span> </div>
+										<div class="modal-body">
+											<p>Fore aut non quem incididunt, varias reprehenderit deserunt quem offendit,
+												cillum proident ne reprehenderit, quem ad laborum, quo possumus praetermissum,
+												si ne illustriora, hic appellat coniunctione, do labore aliqua quo probant. In
+												probant voluptatibus quo mentitum est laboris. Quorum mandaremus graviterque.
+												Mentitum id velit, dolor aut litteris, ea varias illustriora, ita commodo ita
+												ingeniis, iis nulla appellat incurreret, aut irure amet summis pariatur ita ubi
+												quis dolore veniam proident, consequat sed ingeniis.</p>
+										</div>
+										<div class="modal-action bordered text-right">
+											<button data-dismiss="modal" class="btn btn-flat ripple-effect btn-primary" type="button">Agree</button>
+											<button data-dismiss="modal" type="button" class="btn btn-flat ripple-effect btn-default">Disagree</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with List selection -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="list-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header bordered"> 
+											<!--<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+											<h3 class="card-media-heading">List Selection</h3>
+										</div>
+										<div class="modal-body">
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Ahmedabad2" value="option1">
+												<label for="Ahmedabad2">Ahmedabad</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Surat2" value="option1">
+												<label for="Surat2">Surat</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Rajkot2" value="option1">
+												<label for="Rajkot2">Rajkot</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Vadodara2" value="option1">
+												<label for="Vadodara2">Vadodara</label>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio-options">
+												<input type="radio" name="inlineRadioOptions" id="Mehsana2" value="option1">
+												<label for="Mehsana2">Mehsana</label>
+												</label>
+											</div>
+										</div>
+										<div class="modal-action bordered text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Ok</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog Alert -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="alert-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-body"> Would you like to proceed? </div>
+										<div class="modal-action text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Save changes</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Discard</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Form Elements -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="form-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Form Element</h2>
+										</div>
+										<div class="modal-body">
+											<form class="form-horizontal">
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Name</label>
+													<input type="text" class="mat-input form-control" id="name" value="">
+													<span class="help-text">Input is required!</span> </div>
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Email Address</label>
+													<input type="text" class="mat-input form-control" id="email" value="">
+												</div>
+												<div class="form-group paper-input floating-label">
+													<label for="first-name">Mobile No.</label>
+													<input type="text" class="mat-input form-control" id="mobil" value="">
+												</div>
+												<div class="form-group paper-input floating-label">
+													<label class="control-label">Message</label>
+													<textarea required class="form-control"></textarea>
+												</div>
+												<label class="checkbox-inline custom-checkbox checkbox-ripple-effect">
+													<input type="checkbox" value="">
+													<span class="dc-checkbox"> Accept Terms and conditions</span> </label>
+											</form>
+										</div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary" type="button">Save changes</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default" type="button">Discard</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Normal List -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="simple-listing-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Listing</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group dc-textlist">
+												<li class="list-group-item">Cras justo odio</li>
+												<li class="list-group-item">Dapibus ac facilisis inDapibus ac facilisis in Dapibus ac facilisis in</li>
+												<li class="list-group-item">Morbi leo risus</li>
+												<li class="list-group-item">Porta ac consectetur ac</li>
+												<li class="list-group-item">Vestibulum at eros</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Avatar List -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="avatar-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Avatar List</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group sline-avatar">
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Porta ac consectetur ac </div>
+												</li>
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Dapibus ac facilisis in </div>
+												</li>
+												<li class="list-group-item">
+													<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img alt="40x40" data-src="holder.js/40x40" class="img-responsive" src="../../component/list/img/40x40.png" data-holder-rendered="true"> </a> </div>
+													<div class="media-body media-middle"> Porta ac consectetur ac </div>
+												</li>
+											</ul>
+										</div>
+										<div class="modal-action text-right bordered">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Listing icon -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="listing-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header bordered">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<h2 class="card-media-heading">Icon Listing</h2>
+										</div>
+										<div class="modal-body">
+											<ul class="list-group dc-iconlist">
+												<li class="list-group-item"> <i class="dic dic-mood media-left"></i> <span class="media-body">Cras justo odio</span> </li>
+												<li class="list-group-item"><i class="dic dic-notifications media-left media-middle"></i>
+													<div class="media-body">Dapibus ac facilisis in</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-person-add media-left"></i>
+													<div class="media-body">Morbi leo risus</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-share media-left"></i>
+													<div class="media-body">Porta ac consectetur ac</div>
+												</li>
+												<li class="list-group-item"><i class="dic dic-drive-eta media-left"></i>
+													<div class="media-body">Vestibulum at eros</div>
+												</li>
+											</ul>
+										</div>
+										<div class="modal-action text-right">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Media -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="center-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+											<div class="media-left"> <a href="javascript:void(0);" class="avatar-list-img"> <img width="40" height="40" src="../list/img/40x40.png"> </a> </div>
+											<div class="media-body media-middle">
+												<h3 class="card-media-heading">Two-line item</h3>
+												<span class="card-media-text">Secondary text</span> </div>
+										</div>
+										<div class="modal-media"> <img width="1184" height="666" class="img-responsive" src="../../assets/images/profile-pic.png"> </div>
+										<div class="modal-body"> Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions. </div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-share"></span></button>
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-thumb-up"></span></button>
+											<button data-dismiss="modal"  type="button" class="btn btn-sm btn-circle btn-flat ripple-effect btn-primary"><span class="dic dic-drafts"></span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Dialog with Media, Title, Action, and Description area -->
+							<div tabindex="-1" class="modal fade bs-example-modal-lg" id="media-dialog-lg" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-media"> <img width="1184" height="666" class="img-responsive" src="../../assets/images/profile-pic.png"> </div>
+										<div class="card-header">
+											<h2 class="card-media-heading">Title goes here</h2>
+											<span class="card-media-text">Secondary text</span> </div>
+										<div class="modal-action">
+											<button data-dismiss="modal"  class="btn ripple-effect btn-primary btn-flat" type="button">Primary</button>
+											<button data-dismiss="modal"  class="btn ripple-effect btn-default btn-flat" type="button">Action</button>
+										</div>
+										<div class="modal-body"> Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions. </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../../assets/js/jquery.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../tabs/js/tab-scrollable.js"></script>
+<script type="text/javascript" src="../../assets/js/dmaterial.js"></script> 
+<script>
+	function reposition() {
+		var modal = $(this),
+			dialog = modal.find('.modal-dialog');
+			modal.css('display', 'block');
+			dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2));
+			$(".modal .actions").css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2));
+	}
+	
+	// Reposition when a modal is shown
+	$('.modal').on('show.bs.modal', reposition);
+	
+	$('.modal').on('shown.bs.modal', function (e) {
+		$('#dctab').dcTab();
+	})
+
+	$(window).on('resize', function() {
+		$('.modal:visible').each(reposition);
+	});
+
+</script>
+</html>

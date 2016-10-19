@@ -1,0 +1,41 @@
+/* DMaterial*/
+.nav > li > a{padding: 10px 24px; line-height: inherit;}
+.dc-tabs{ position:relative;}
+
+/* tabs scrollable*/
+.slider { position: absolute; bottom: 0; width: 25%; height: 3px; background: #CC0; transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}
+.scrollable-wrapper {display: block; width: 100%; height: 48px; position: relative; overflow: hidden;}
+.scroller-right {float: right; right:0; top:0;}
+.scroller-left {float: left; left:0;}
+.scroller-right, .scroller-left{ position:absolute; z-index:99; text-align: center;	cursor: pointer; display: none; white-space: no-wrap; vertical-align: middle; padding:12px 24px 8px 24px; background-color:#4285f4; color:#fff;}
+
+.dc-tabs .slider { position: absolute; bottom: 0; width: 25%; height: 3px; background: #CC0; ransition: all .3s ease-in-out;}
+.dc-tabs .nav-tabs.nav-justified > li > a { border:none;  border-radius:0;}
+.dc-tabs .nav-tabs.nav-justified > .active > a,
+.dc-tabs .nav-tabs.nav-justified > .active > a:hover,
+.dc-tabs .nav-tabs.nav-justified > .active > a:focus { border:none;}
+.dc-tabs .nav-tabs.nav-justified > li > a{border-radius: 0;}
+.dc-tabs .nav-tabs > li.active > a,
+.dc-tabs .nav-tabs > li.active > a:hover,
+.dc-tabs .nav-tabs > li.active > a:focus { color: inherit; cursor: default; background-color: transparent;  border: none;  border-bottom-color: transparent; opacity:1;}
+.dc-tabs .nav-tabs > li > a:hover {border-color: transparent; background-color:transparent}
+.dc-tabs .nav-tabs > li > a { margin-right: 0; line-height: 1; border:none; border-radius: 0; text-transform:uppercase;}
+.dc-tabs .nav-tabs > li { margin-bottom: 0;}
+.dc-tabs .nav-tabs { border-bottom:none;}
+.dc-tabs .nav .open > a,
+.dc-tabs .nav .open > a:hover,
+.dc-tabs .nav .open > a:focus { background-color: #fff; border-color: #fff;}
+.dc-tabs .nav > li > a { padding: 18px 24px 17px;}
+.dc-tabs .nav > li > a:hover, .dc-tabs .nav > li > a:focus{}
+
+/*Themes*/
+.nav-tabs > li > a { opacity:0.54; color:#000; font-weight:500;}
+.dc-tabs-bg{ background-color:#4285f4; color:#fff;}
+.dc-tabs-bg li .dropdown-menu a {color:#333;}
+.dc-tabs-bg li a {color:#fff;}
+.dc-tabs-bg .scroller-right, .dc-tabs-bg .scroller-left, 
+.dc-tabs-bg .scrollable-wrapper{background-color:#4285f4; color:#fff;}
+
+@media (max-width: 767px) {
+.nav > li > a{padding: 10px 16px;}
+}

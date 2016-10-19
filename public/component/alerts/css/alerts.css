@@ -1,0 +1,22 @@
+/*  button wrapper */
+.bottom-alert-main { float:left; width:100%;}
+
+/* dynamic container css for possion */
+.notification-container { position:fixed; width:auto; text-align:right; padding:0; }
+
+.notification-container.top { top:20px;}
+.notification-container.bottom { bottom:20px;}
+.notification-container.left { left:20px;}
+.notification-container.right { right:20px;}
+.notification-container.center { left:50%; }
+.notification-container .notificationBox  {  position:relative; margin-bottom:5px; visibility:hidden; text-align:left; vertical-align:middle;  background:#000; padding:9px 24px; color:#fff; width:360px; z-index:1000; clear:both;  margin-bottom:5px; border-radius:3px; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s;animation-duration: 1s;	-webkit-animation-fill-mode: both;-moz-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both;}
+/* dynamic container css for possion */
+
+/*  */
+.notification-container .notificationBox.error { background:#FE5722; color:#fff;}
+.notification-container .notificationBox.information {background:#0288D1; color:#fff;}
+.notification-container .notificationBox.warning {background:#FFB300; color:#fff;}
+.notification-container .notificationBox.success {background:#229A21; color:#fff;}
+.notification-container .notificationBox.visible { visibility:visible;} 
+.notificationBox a,
+.notification a { float:right; color:#d5e734;}

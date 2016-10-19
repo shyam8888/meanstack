@@ -1,0 +1,14 @@
+header{background:#4285f4; color:#fff;}
+header a{color:#fff;}
+
+/*Flat Button Color Theme*/
+.btn.dark{color:#fff;}
+.btn.disable.dark, .btn.disable.dark:hover, .btn.disable.dark:active{color:rgba(225, 225, 225, 0.3); background:none;}
+.btn:hover.dark{background:rgba(153, 153, 153, 0.15);}
+.btn:active.dark{background:rgba(153, 153, 153, 0.25);}
+
+/*Rasised Button Color Theme*/
+.btn.raised{color:#1d1d1d; background:#e0e0e0;}
+.btn:hover.raised{background:rgba(153, 153, 153, 0.15);}
+.btn:active.raised{background:rgba(153, 153, 153, 0.25);}
+.btn.disable.raised, .btn.disable.raised:hover, .btn.disable.raised:active{color:rgba(0, 0, 0, 0.26);}

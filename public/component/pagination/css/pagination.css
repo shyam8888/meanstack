@@ -1,0 +1,11 @@
+/*Dmaterial*/
+.dc-pagination{ margin:0; margin-right:-16px;}
+.dc-pagination a, .dc-pagination span{ display:inline-block; vertical-align:middle;}
+.dc-pagination a{ padding:0 12px;}
+.dc-pagination .dropdown-menu{ min-width: 60px;}
+.dc-pagination .btn{min-width:inherit;}
+
+@media screen and (max-width: 767px) {
+	.dc-pagination.pull-right{ float:none !important; text-align:center;}
+	.dc-pagination a{ padding:0;}
+}

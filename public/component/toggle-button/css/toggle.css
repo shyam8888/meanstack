@@ -1,0 +1,13 @@
+.togglebutton { vertical-align: middle;}
+.togglebutton, .togglebutton label, .togglebutton input, .togglebutton .toggle { -moz-user-select: none;}
+.togglebutton label { cursor: pointer; font-weight: 400;}
+.togglebutton label input[type="checkbox"] { height: 0; opacity: 0; width: 0; position:absolute;}
+.togglebutton label .toggle, .togglebutton label input[type="checkbox][disabled"] + .toggle { background-color: rgba(80, 80, 80, 0.7); border-radius: 15px; content: ""; display: block; height: 15px; transition: background 0.3s ease 0s;   vertical-align: middle; width: 30px; position:relative;}
+.togglebutton label .toggle::after { background-color: #f1f1f1; border-radius: 20px; box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4); content: ""; display: inline-block; height: 20px; left: -6px; position: absolute; top: -2px; transition: left 0.3s ease 0s, background 0.3s ease 0s, box-shadow 0.1s ease 0s; width: 20px;}
+.togglebutton label input[type="checkbox][disabled"] + .toggle::after, .togglebutton label input[type="checkbox][disabled"]:checked + .toggle::after {background-color: #bdbdbd;}
+.togglebutton label input[type="checkbox"] + .toggle:active::after, .togglebutton label input[type="checkbox][disabled"] + .toggle:active::after { box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1);}
+.togglebutton label input[type="checkbox"]:checked + .toggle::after { left: 15px;}
+.togglebutton label input[type="checkbox"]:checked + .toggle, .togglebutton-default label input[type="checkbox"]:checked + .toggle { background-color: rgba(0, 150, 136, 0.5);}
+.togglebutton label input[type="checkbox"]:checked + .toggle::after, .togglebutton-default label input[type="checkbox"]:checked + .toggle::after { background-color: #009688;}
+.togglebutton label input[type="checkbox"]:checked + .toggle:active::after, .togglebutton-default label input[type="checkbox"]:checked + .toggle:active::after { box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 150, 136, 0.2);}
+.togglebutton-black label input[type="checkbox"]:checked + .toggle:active::after {box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.2);}

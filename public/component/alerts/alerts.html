@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<title>Alerts</title>
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/global.css" />
+</head>
+
+<body>
+<div class="container">
+    <div class="bs-docs-section">
+        <h1 id="buttons" class="page-header">Material Alerts</h1>
+        <div class="card z-depth">
+			<div class="card-body">
+				<!--bottom-alert-main -->	
+				<div class="bottom-alert-main">
+					<!--row -->
+					<div class="row">
+						<!--col-lg-6 -->
+						<div class="col-lg-6">
+							<p><div class="type-info">Alert Top</div></p>
+							
+							<button type="button" 
+							data-positionX="left"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 1 messages"
+							data-revert="fadeOutUp"
+							
+							class="btn ripple-effect btn-default z-depth notification-trigger">Alert Left</button>
+							
+							<button type="button" 
+							data-positionX="center"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 2 messages"
+							class="btn ripple-effect btn-default z-depth notification-trigger">Alert Center</button>
+							
+							<button type="button" 
+							data-positionX="right"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 3 messages"
+							class="btn ripple-effect btn-default z-depth notification-trigger">Alert Right</button>
+						</div>
+						<!--col-lg-6 -->
+						<!--col-lg-6 -->
+						<div class="col-lg-6">
+							<p><div class="type-info">Alert Bottom</div></p>
+							<button type="button" 
+							data-positionX="left"
+							data-positionY="bottom"
+							data-effect="fadeInDown"
+							data-message="You have 4 messages"
+							class="btn ripple-effect btn-default z-depth notification-trigger">Alert Left</button>
+	
+							<button type="button" 
+							data-positionX="center"
+							data-positionY="bottom"
+							data-effect="fadeInDown"
+							data-message="You have 5 messages"
+							class="btn ripple-effect btn-default z-depth notification-trigger">Alert Center</button>
+							
+							<button type="button" 
+							data-positionX="right"
+							data-positionY="bottom"
+							data-effect="fadeInDown"
+							data-message="You have 6 messages"
+							class="btn ripple-effect btn-default z-depth notification-trigger">Alert Right</button>
+						</div>           
+						<!--col-lg-6 -->
+						<!--col-lg-6 -->
+						<div class="col-lg-12">
+							<p><div class="type-info">Alert Type</div></p>
+							
+							<button type="button" 
+							data-positionX="left"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 7 messages"
+							data-type="information" 
+							data-revert="fadeOutUp"
+							
+							class="btn ripple-effect btn-info z-depth notification-trigger">Alert Information</button>
+							
+							<button type="button" 
+							data-positionX="center"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 8 messages"
+							data-type="warning" 
+							class="btn ripple-effect btn-warning z-depth notification-trigger">Alert Warning</button>
+							
+							<button type="button" 
+							data-positionX="right"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 9 messages"
+							data-type="success" 
+							class="btn ripple-effect btn-success z-depth notification-trigger">Alert Success</button>
+	
+							<button type="button" 
+							data-positionX="right"
+							data-positionY="top"
+							data-effect="fadeInUp"
+							data-message="You have 9 messages"
+							data-type="error" 
+							class="btn ripple-effect btn-danger z-depth notification-trigger">Alert Error</button>
+						</div>
+						<!--col-lg-6 -->
+					</div>     
+					<!--row -->
+				</div>
+				<!--bottom-alert-main -->
+
+				<!--alerts-main -->	
+				<div class="alerts-main">
+					<br>
+					<button type="button" data-alert="success" data-effect="fade" class="btn ripple-effect btn-success alert-trigger">Success</button>
+					<br><br>
+    				<div class="alert alert-success" role="alert"><p>You have registered successfully.</p></div>
+                    <br>
+					<button type="button" data-alert="information" data-effect="fade"  class="btn ripple-effect btn-info alert-trigger">Info</button>
+					<br><br>
+					<div class="alert alert-info" role="alert"><p>This will take you to the Information segment.</p></div>
+                    <br>
+					<button type="button" data-alert="warning" data-effect="slide"  class="btn ripple-effect btn-warning alert-trigger">Warning</button>
+					<br><br>
+					<div class="alert alert-warning" role="alert"><p>There might be a problem.</p></div>
+					<br>
+					<button type="button" data-alert="error" data-effect="slide"  class="btn ripple-effect btn-danger alert-trigger">error</button>
+					<br><br>	
+					<div class="alert alert-danger" role="alert"><p>Something is wrong.</p></div>
+
+				</div>
+				<!--alerts-main -->
+	            <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/ripple.js" language="javascript" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+			
+		$notiWrap = "<div class='notification-container top left'></div>" +
+			"<div class='notification-container top center'></div>" +
+			"<div class='notification-container top right'></div>" +
+			"<div class='notification-container bottom left'></div>" +
+			"<div class='notification-container bottom center'></div>" +
+			"<div class='notification-container bottom right'></div>" ;
+
+		$('body').append($notiWrap);
+
+		$(".notification-trigger").click(function(){
+
+
+			$positionX = $(this).attr("data-positionX");
+			$positionY = $(this).attr("data-positionY");
+			$dataEffect = $(this).attr("data-effect");
+			$dataRevert = $(this).attr("data-revert");
+			$dataMessage = $(this).attr("data-message");
+			$dataType = $(this).attr("data-type");
+			$notification = "<div class='notificationBox'>"+$dataMessage+"</div>";
+			$currentPath = $(".notification-container."+ $positionX +"."+ $positionY);
+			
+			var boxLength = $(".notification-container."+ $positionX +"."+ $positionY + " .notificationBox").length;
+
+			
+			
+			if (boxLength > 0) {
+				if ($positionY == 'top') {
+					$currentPath.append($notification);
+				}
+				else {
+					$currentPath.prepend($notification);
+				}
+
+				$currentPath.width($(".notificationBox").outerWidth());
+				$currentPath.children(".notificationBox").addClass("visible" +" "+ $dataEffect).delay(3000).slideUp(function(){$(this).removeClass("visible" +" "+ $dataEffect).remove();});
+				$currentPath.children(".notificationBox").eq(boxLength).addClass($dataType);
+
+				
+			}else {
+				$currentPath.append($notification);
+				$currentPath.width($(".notificationBox").outerWidth());
+				$currentPath.children(".notificationBox").addClass("visible" +" "+ $dataEffect).delay(3000).slideUp(function(){$(this).removeClass("visible" +" "+ $dataEffect).remove();});
+				$currentPath.children(".notificationBox").eq(boxLength).addClass($dataType);
+
+			}
+
+			$middle = $(".notificationBox").outerWidth() / 2;  
+			$(".notification-container.center").css("marginLeft","-" + $middle+"px");
+			
+		});
+		
+		
+	});
+	
+
+</script>
+</body>
+</html>

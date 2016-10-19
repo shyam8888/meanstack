@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Select Box</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/global.css" />
+	<link rel="stylesheet" href="css/select2.min.css" />
+</head>
+<body>
+<style type="text/css">
+.form-horizontal .selection .paper-input{width:100% !important;}
+.select2-container--default .select2-selection--single .select2-selection__rendered{display:block;line-height:1.42857;padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,0.1);font-size:16px;}
+.paper-input .select2-selection{border:none;border-radius:0;background-color:transparent;text-align:left;position:relative;outline:none;}
+.paper-input .select2-container--default .select2-selection--single .select2-selection__arrow{width:10px;right:0;}
+.paper-input .select2-container--default .select2-selection--multiple{border-bottom: 1px solid rgba(0, 0, 0, 0.1);display: block;font-size: 16px;line-height: 1.42857;padding-bottom:0px;}
+.select2-container .select2-selection--multiple .select2-selection__rendered{display:block;}
+.paper-input .select2-container--default .select2-selection--multiple .select2-selection__choice{background:rgba(0, 0, 0, 0.07);border:1px solid rgba(0, 0, 0, 0.09);border-radius:2px;margin:0px 6px 6px 0;color: rgba(0, 0, 0, 0.7);font-size:16px;padding:4px 8px;line-height:1.4}
+.paper-input .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{margin:0 4px 0 8px;color:rgba(0, 0, 0, 0.5);float:right;}
+.paper-input .select2-container--default .select2-search--inline .select2-search__field{margin:4px 4px 0 0;min-height:32px;padding-bottom:6px;}
+.paper-input .select2-container--focus{border:none;}
+.paper-input .select2-container--default.select2-container--focus .select2-selection--multiple{border:none;border-bottom:1px solid #e2e2e2;}
+.paper-input .select2-container{max-width:100%;width:100%!important}
+.select2-container--default .select2-search--dropdown .select2-search__field{border-color:#ccc;}
+.select2-dropdown{box-shadow:0 2px 2px #cccccc;border:1px solid rgba(0,0,0,0.18);margin-top:4px;}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#F7F7F7;color:rgba(0,0,0,0.84);}
+.select2-container--default .select2-results__option[aria-selected="true"]{background-color:#F7F7F7;}
+.table-heading .paper-input .select2-selection{border-color:#ccc;}
+.paper-input .select-simple ~ span.bar, .paper-input .select-with-search ~ span.bar, .paper-input .select-tags ~ span.bar, , .paper-input .select-add-tags ~ span.bar{display:none;}
+.select2-results__option{line-height:1.4;padding-bottom:7px;font-size:16px;}
+
+.floating-label-active .bar {  transform: scaleX(1);}
+.paper-input.floating-label select[data-placeholder], .paper-input.floating-label .select2-selection__placeholder, .paper-input.floating-label input[placeholder]{opacity:0}
+
+
+
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-3">
+      <h3>Select Box</h3>
+	 	<div class="card z-depth">
+        	<div class="form-group paper-input floating-label">       
+            	<label>Simple Select</label>
+                <select data-placeholder="Your Favorite Football Team" class="select-simple form-control">
+                  <option></option>
+                  <option>Dallas Cowboys</option>
+                  <option>New York Giants</option>
+                  <option>Philadelphia Eagles</option>
+                  <option>Washington Redskins</option>
+                  <option>Chicago Bears</option>
+                  <option>Detroit Lions</option>
+                  <option>Green Bay Packers</option>
+                  <option>Minnesota Vikings</option>
+                  <option>Arizona Cardinals</option>
+                  <option>St. Louis Rams</option>
+                  <option>San Francisco 49ers</option>
+                  <option>Seattle Seahawks</option>
+                  <option>Baltimore Ravens</option>
+                  <option>Cincinnati Bengals</option>
+                  <option>Cleveland Browns</option>
+                  <option>Pittsburgh Steelers</option>
+                  <option>Houston Texans</option>
+                  <option>Indianapolis Colts</option>
+                  <option>Jacksonville Jaguars</option>
+                  <option>Tennessee Titans</option>
+                  <option>Denver Broncos</option>
+                  <option>Kansas City Chiefs</option>
+                  <option>Oakland Raiders</option>
+                  <option>San Diego Chargers</option>
+                </select>
+            </div><br>
+            <div class="form-group paper-input floating-label">
+                <label>Simple Select with Search</label>
+                <select data-placeholder="Your Favorite Football Team" class="select-with-search">
+                  <option></option>
+                  <option>Dallas Cowboys</option>
+                  <option>New York Giants</option>
+                  <option>Philadelphia Eagles</option>
+                  <option>Washington Redskins</option>
+                  <option>Chicago Bears</option>
+                  <option>Detroit Lions</option>
+                  <option>Green Bay Packers</option>
+                  <option>Minnesota Vikings</option>
+                  <option>Arizona Cardinals</option>
+                  <option>St. Louis Rams</option>
+                  <option>San Francisco 49ers</option>
+                  <option>Seattle Seahawks</option>
+                  <option>Baltimore Ravens</option>
+                  <option>Cincinnati Bengals</option>
+                  <option>Cleveland Browns</option>
+                  <option>Pittsburgh Steelers</option>
+                  <option>Houston Texans</option>
+                  <option>Indianapolis Colts</option>
+                  <option>Jacksonville Jaguars</option>
+                  <option>Tennessee Titans</option>
+                  <option>Denver Broncos</option>
+                  <option>Kansas City Chiefs</option>
+                  <option>Oakland Raiders</option>
+                  <option>San Diego Chargers</option>
+                </select>
+            </div><br>
+        	
+            <div class="form-group paper-input floating-label">
+            	<label>Select Multiple Tags</label>
+                <select data-placeholder="Your Favorite Football Team" class="select-tags" multiple>
+                  <option>Dallas Cowboys</option>
+                  <option>New York Giants</option>
+                  <option>Philadelphia Eagles</option>
+                  <option>Washington Redskins</option>
+                  <option>Chicago Bears</option>
+                  <option>Detroit Lions</option>
+                  <option>Green Bay Packers</option>
+                  <option>Minnesota Vikings</option>
+                  <option>Arizona Cardinals</option>
+                  <option>St. Louis Rams</option>
+                  <option>San Francisco 49ers</option>
+                  <option>Seattle Seahawks</option>
+                  <option>Baltimore Ravens</option>
+                  <option>Cincinnati Bengals</option>
+                  <option>Cleveland Browns</option>
+                  <option>Pittsburgh Steelers</option>
+                  <option>Houston Texans</option>
+                  <option>Indianapolis Colts</option>
+                  <option>Jacksonville Jaguars</option>
+                  <option>Tennessee Titans</option>
+                  <option>Denver Broncos</option>
+                  <option>Kansas City Chiefs</option>
+                  <option>Oakland Raiders</option>
+                  <option>San Diego Chargers</option>
+                </select>
+            </div><br>
+            <div class="form-group paper-input floating-label">
+            	<label>Select &amp; Add Multiple Tags</label>
+                <select data-placeholder="Your Favorite Football Team" class="select-add-tags" multiple>
+                  <option>Dallas Cowboys</option>
+                  <option>New York Giants</option>
+                  <option>Philadelphia Eagles</option>
+                  <option>Washington Redskins</option>
+                  <option>Chicago Bears</option>
+                  <option>Detroit Lions</option>
+                  <option>Green Bay Packers</option>
+                  <option>Minnesota Vikings</option>
+                  <option>Arizona Cardinals</option>
+                  <option>St. Louis Rams</option>
+                  <option>San Francisco 49ers</option>
+                  <option>Seattle Seahawks</option>
+                  <option>Baltimore Ravens</option>
+                  <option>Cincinnati Bengals</option>
+                  <option>Cleveland Browns</option>
+                  <option>Pittsburgh Steelers</option>
+                  <option>Houston Texans</option>
+                  <option>Indianapolis Colts</option>
+                  <option>Jacksonville Jaguars</option>
+                  <option>Tennessee Titans</option>
+                  <option>Denver Broncos</option>
+                  <option>Kansas City Chiefs</option>
+                  <option>Oakland Raiders</option>
+                  <option>San Diego Chargers</option>
+                </select>
+            </div>
+        </div>     	
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js" type="text/javascript"></script> 
+<!-- Select2 -->
+<script type="text/javascript" src="js/select2.full.js"></script>
+<style>
+	body > .select2-container { transition:height ease-in-out 0.3s;}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".select-with-search").select2();
+  $(".select-simple").select2({
+      minimumResultsForSearch: Infinity
+  });
+  $(".select-tags").select2({
+      tags: false
+  })
+  $(".select-add-tags").select2({
+      tags: true
+  })
+  
+  
+});
+$( document ).ready(function() {
+	
+	// Start  floating action label input
+	$(".bar").remove();
+	
+	$(".paper-input .select2-selection__rendered").after('<span class="bar"></span>');
+	
+	$('.paper-input .select2-selection__rendered').each(function () {
+		if($(this).val() != ""){
+			$(this).closest('.paper-input').addClass("floating-label-completed");
+	  	}
+	});
+	$(".paper-input .selection").click(function(){
+	  $(this).addClass("floating-label-active floating-label-completed");
+	});
+	$(".paper-input").click(function(){
+	  $(this).closest('.paper-input').addClass("floating-label-active floating-label-completed");
+	});
+	
+	$(".paper-input .selection").focusout(function(){
+	  if($(this).val() === ""){
+		$(this).removeClass("floating-label-completed");
+	  }
+	  $(this).removeClass("floating-label-active");
+	});
+	
+	$(".paper-input").focusout(function(){
+	  if($(this).val() === "0"){
+		$(this).removeClass("floating-label-completed");
+	  }
+	  $(this).removeClass("floating-label-active");
+	});
+	// End floating action label input
+	
+});
+</script>
+</body>
+</html>

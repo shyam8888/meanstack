@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Text fields</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/global.css" />
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-sm-push-3">
+			<h3>Text fields</h3>
+			<div class="card z-depth">
+				<div class="card-body">
+				<div class="form-group">
+					<input type="text" class="form-control" id="first-name" placeholder="Text input">
+				</div>
+				<div class="form-group paper-input">
+					<input type="text" class="form-control" id="first-name" placeholder="Text input">
+				</div>
+				<div class="form-group paper-input">
+					<label class="control-label" for="first-name">First Name</label>
+					<input type="text" class="form-control" id="first-name">
+					<span>Input is required!</span> 
+				</div>
+				
+				<div class="form-group paper-input floating-label">
+					<label class="control-label" for="first-name">Email</label>
+					<input type="email" class="form-control" id="first-name">
+					<span>Input is required!</span> 
+				</div>
+				
+				<div class="form-group paper-input floating-label">
+					<label class="control-label" for="first-name">First Name</label>
+					<input type="text" class="mat-input form-control" id="first-name" value="No" disabled>
+				</div>
+				<div class="form-group paper-input floating-label">
+					<label class="control-label" for="first-name">First Name</label>
+					<input class="mat-input form-control" id="first-name" value="yes" type="number">
+				</div>
+				<div class="form-group paper-input floating-label has-success">
+					<label class="control-label" for="inputSuccess1">Input with success</label>
+					<input type="text" class="form-control" id="inputSuccess1">
+				</div>
+				<div class="form-group paper-input floating-label has-warning">
+					<label class="control-label" for="inputWarning1">Input with warning</label>
+					<input type="text" class="form-control" id="inputWarning1" value="test">
+				</div>
+				<div class="form-group paper-input floating-label has-error">
+					<label class="control-label" for="inputError1">Input with error</label>
+					<input type="email" class="form-control" required>
+					<span class="has-error-text">Input is required!</span> </div>
+				<div class="form-group paper-input floating-label">
+					<div class="input-group">
+						<label class="control-label" for="inputError1">Input with error</label>
+						<input type="text" id="exampleInputAmount" class="form-control">
+						<div class="input-group-addon">.00</div>
+					</div>
+				</div>
+				<div class="form-group paper-input floating-label">
+					<label class="control-label" for="inputError1">Input with error</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group paper-input floating-label">
+					<label class="control-label input-group-floating-label" for="inputError1">Input with error</label>
+					<div class="input-group">
+						<div class="input-group-addon"><i class="dic-perm-identity dic"></i></div>
+						<input type="text" id="exampleInputAmount" class="form-control">
+						<div class="input-group-addon">.00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="../../assets/js/jquery.js"></script> 
+<script src="../../assets/js/dmaterial.js"></script> 
+</body>
+</html>

@@ -1,0 +1,18 @@
+.modal-content{border-radius:2px;}
+.modal-header {border-bottom: 1px solid rgba(0, 0, 0, 0);border-top-left-radius: 3px;border-top-right-radius: 3px;margin-bottom: 16px;padding: 16px 16px 0;}
+.modal-header.bordered{border-bottom:1px solid #e5e5e5;padding-bottom:16px;}
+.modal-header h2.card-media-heading{font-weight:500;}
+.modal-body{color: rgba(0, 0, 0, 0.84);margin-bottom:16px;margin-top:16px;padding:0 16px;}
+.modal-body > p:last-child{margin-bottom:0;}
+.modal-footer{padding:16px;}
+.modal-action{padding:8px 4px;}
+.modal-action .btn.btn-circle {padding: 0;}
+.modal-action.bordered{border-top:1px solid #e5e5e5;}
+.modal-action .btn {min-width: inherit;padding: 10px 8px;margin-bottom: 8px;margin-left: 4px;margin-right: 4px;margin-top:8px;}
+.modal-action .btn:first-child {margin-left: 12px;}
+.modal-action .btn.btn-flat:first-child{margin-left: 4px;}
+.modal-action .btn-flat{margin:0 4px 0 0;}
+.modal .radio, .modal .checkbox{margin:16px 0;}
+.modal .radio-options > label{padding-left:32px;}
+.modal .list-group.sline-avatar{margin:8px 4px;padding:0}
+.modal .list-group:last-child{margin-bottom:0;}

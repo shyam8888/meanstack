@@ -1,0 +1,125 @@
+.input-group-addon{ border:none;}
+.form-control{ padding:12px 0 4px; height:auto; font-size:16px; border-radius:0;}
+.floatinglabels {position: relative; margin-bottom:8px;}
+.floatinglabels input {	border: none; border-bottom-width: 1px; border-bottom-style: solid;	border-bottom-color: #e6e6e6; background: none;	box-shadow: none;}
+.floatinglabels label {font-size: 16px;	font-weight: normal; position: absolute; pointer-events: none;	top: 8px; margin:0; transition: 0.2s ease all;	-moz-transition: 0.2s ease all; -webkit-transition: 0.2s ease all; opacity:0.54;}
+.floatinglabels input:focus ~ label, .floatinglabels input:valid ~ label {top:-8px; font-size:12px;}
+.floatinglabels .bar { position: relative; display: block;	width: 100%;}
+.floatinglabels .bar:before, .floatinglabels .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 0;
+	position: absolute;
+	background: #5264AE;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+.floatinglabels .bar:before {
+	left: 50%;
+}
+.bar:after {
+	right: 50%;
+}
+.floatinglabels input:focus ~ .bar:before, .floatinglabels input:focus ~ .bar:after {
+	width: 50%;
+}
+.floatinglabels .highlight {
+	position: absolute;
+	height: 24px;
+	width: 100px;
+	top: 8px;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.floatinglabels input:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	-moz-animation: inputHighlighter 0.3s ease;
+	animation: inputHighlighter 0.3s ease;
+}
+/*Error Text*/
+.error-text {
+	display: none;
+}
+.floatinglabels.error label {
+	color: #f44336 !important;
+	opacity:1;
+}
+.floatinglabels.error .error-text {
+	color: #f44336;
+	font-size: 12px;
+	height: 25px;
+	width: 100%;
+	display: block;
+}
+.floatinglabels.error .bar:before, .floatinglabels.error .bar:after {
+	background: #f44336;
+}
+.floatinglabels.error .bar:after, .floatinglabels.error .bar:before {
+	width: 50%;
+}
+.floatinglabels.error .dc-icon {
+	float: right;
+	margin-right: 5px;
+	font-size: 18px;
+	margin-top: -3px;
+}
+.floatinglabels .help-text {
+	font-size: 12px;
+	height: 25px;
+	padding-top: 0px;
+	width: 100%;
+	display: block;
+	opacity:0.54;
+}
+.floatinglabels.disable input {
+	border-bottom-style: dashed;
+}
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+from {
+background:#5264AE;
+}
+to {
+	width: 0;
+	background: transparent;
+}
+}
+@-moz-keyframes inputHighlighter {
+from {
+background:#5264AE;
+}
+to {
+	width: 0;
+	background: transparent;
+}
+}
+@-ms-keyframes inputHighlighter {
+from {
+background:#5264AE;
+}
+to {
+	width: 0;
+	background: transparent;
+}
+}
+@-o-keyframes inputHighlighter {
+from {
+background:#5264AE;
+}
+to {
+	width: 0;
+	background: transparent;
+}
+}
+@keyframes inputHighlighter {
+from {
+background:#5264AE;
+}
+to {
+	width: 0;
+	background: transparent;
+}
+}

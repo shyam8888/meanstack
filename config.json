@@ -1,0 +1,14 @@
+{
+  "dbConfig": {
+    "host": "192.168.0.23",
+    "port": "3306",
+    "user": "usr",
+    "password": "usr",
+    "database": "EasyPay_Dev",
+    "type": "database",
+    "databaseType": "mysql"
+  },
+  "port": 3000,
+  "environment": "production",
+  "isLogger": true
+}
